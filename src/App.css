@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.menu {
+  background: #f9f7f7 !important;
+}
+
+.footer {
+  position: fixed !important;
+  bottom: 0px;
+  width: 100%;
+  background: #f9f7f7 !important;
+}
+
+.bodyBoard {
+  margin-top: 7em;
+  color: #777 !important;
+}
+
+.description {
+  padding-left: 20px;
+  text-align: right;
+}
+
+.description > img {
+  padding-left: 20px;
+}
+
+.ui.text.container { 
+  max-width: 1000px !important;
+}
