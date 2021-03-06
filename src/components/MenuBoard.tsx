@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Container, Dropdown, Menu, Image } from 'semantic-ui-react';
 
 export function MenuBoard() {
@@ -9,12 +10,17 @@ export function MenuBoard() {
           <Image size='mini' src='logo_fire.png' style={{ marginRight: '1.5em' }} />
           FireBoard
         </Menu.Item>
-        <Menu.Item as='a'>Painel</Menu.Item>
-
+        <Menu.Item as='a'>
+          <Link to="/">Painel</Link>
+        </Menu.Item>
         <Dropdown item simple text='Menu'>
           <Dropdown.Menu>
-            <Dropdown.Item>Usuários</Dropdown.Item>
-            <Dropdown.Item>Máquinas</Dropdown.Item>
+            <Dropdown.Item>
+              <Link to="/users">Usuários</Link>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <Link to="/about">Máquinas</Link>
+            </Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item>Mensalidade</Dropdown.Item>
           </Dropdown.Menu>
